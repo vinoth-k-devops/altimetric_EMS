@@ -1,0 +1,75 @@
+﻿@model Login_Register_ViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Election Management System</title>
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+</head>
+<body>
+    <section class="wrapper">
+        <div class="form signup">
+            <header>Signup</header>
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+            {
+                @Html.TextBoxFor(model => model.RegisterViewModel!.election_voter_id, htmlAttributes: new { @placeholder = "Voter Id", @autocomplete = "off", required = "required" })
+                @Html.TextBoxFor(model => model.RegisterViewModel!.election_voter_name, htmlAttributes: new { @placeholder = "Name", @autocomplete = "off", required = "required" })
+                @Html.TextBoxFor(model => model.RegisterViewModel!.election_address, htmlAttributes: new { @placeholder = "Address", @autocomplete = "off", required = "required" })
+                @Html.DropDownListFor(model => model.RegisterViewModel!.election_state_id, ViewBag.StateDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown", @onchange = "CallCity()" })
+                <select class="dropdown" asp-for="RegisterViewModel!.election_city_id"></select>
+                @*@Html.DropDownListFor(model => model.RegisterViewModel!.election_state_id, ViewBag.StateDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown" })*@
+                <input type="password" asp-for="RegisterViewModel!.election_voter_password" placeholder="Password" required />
+                @*<div class="checkbox">
+                        <input type="checkbox" id="signupCheck" />
+                        <label for="signupCheck">I accept all terms & conditions</label>
+                    </div>*@
+                <input type="submit" value="Signup" />
+            }
+        </div>
+        <div class="form login">
+            <header>Login</header>
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+                @Html.TextBoxFor(model => model.LoginViewModel!.UserName, htmlAttributes: new { @placeholder = "User Name", @autocomplete = "off", required = "required" })
+                <input type="password" asp-for="LoginViewModel!.Password" placeholder="Password" required />
+                <input type="submit" value="Login" />
+            }
+        </div>
+    </section>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        const wrapper = document.querySelector(".wrapper"),
+            signupHeader = document.querySelector(".signup header"),
+            loginHeader = document.querySelector(".login header");
+        loginHeader.addEventListener("click", () => {
+            wrapper.classList.add("active");
+        });
+        signupHeader.addEventListener("click", () => {
+            wrapper.classList.remove("active");
+        });
+        document.querySelector(".login header").click();
+
+        function CallCity() {
+            $.ajax({
+                type: "GET",
+                url: "/Account/GetActiveCities/" + $("#RegisterViewModel_election_state_id").val(),
+                success: function (data) {
+                    var result = JSON.parse(data);
+                    var s = '<option value="-1">--Select--</option>';
+                    if (result != null) {
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].election_city_id + '">' + result[i].election_city_name + '</option>';
+                        }
+                    }
+                    $("#RegisterViewModel_election_city_id").html(s);
+                }
+            });
+        }
+        CallCity();
+    </script>
+</body>
+</html>

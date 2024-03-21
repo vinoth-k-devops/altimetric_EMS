@@ -1,0 +1,141 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EMS_Web_App
+build_property.RootNamespace = EMS_Web_App
+build_property.ProjectDir = /Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App
+build_property._RazorSourceGeneratorDebug = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Canditure/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGl0dXJlL0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Canditure/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGl0dXJlL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Canditure/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGl0dXJlL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/City/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2l0eS9BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/City/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2l0eS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/City/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2l0eS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Election/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRWxlY3Rpb24vQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Election/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRWxlY3Rpb24vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Election/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRWxlY3Rpb24vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Home/EResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FUmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Home/UserDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Vc2VyRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/MPSeat/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTVBTZWF0L0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/MPSeat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTVBTZWF0L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/MPSeat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTVBTZWF0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Party/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFydHkvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Party/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFydHkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Party/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFydHkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/State/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdGUvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/State/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdGUvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/State/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhdGUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Symbol/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3ltYm9sL0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Symbol/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3ltYm9sL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Symbol/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3ltYm9sL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-og4apujdce

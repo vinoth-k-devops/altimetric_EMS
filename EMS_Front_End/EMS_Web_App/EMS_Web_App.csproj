@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.17" />
+    <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
+    <PackageReference Include="toastr" Version="2.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EMS_Common\EMS_Common.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="Views\State\" />
+    <Folder Include="Views\City\" />
+    <Folder Include="Views\Symbol\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="StaticFunc\" />
+    <Folder Include="Views\Party\" />
+    <Folder Include="Views\Election\" />
+    <Folder Include="Views\MPSeat\" />
+    <Folder Include="Views\Canditure\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\State\" />
+    <None Remove="Views\City\" />
+    <None Remove="Views\Symbol\" />
+    <None Remove="Views\Account\" />
+    <None Remove="StaticFunc\" />
+    <None Remove="Views\Party\" />
+    <None Remove="Views\Election\" />
+    <None Remove="Views\MPSeat\" />
+    <None Remove="Views\Canditure\" />
+  </ItemGroup>
+</Project>

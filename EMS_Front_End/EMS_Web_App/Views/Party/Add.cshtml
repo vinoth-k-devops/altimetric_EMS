@@ -1,0 +1,37 @@
+﻿@model election_parties
+@{
+    ViewData["Title"] = "Add Party";
+}
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">@ViewData["Title"]</h1>
+        <a asp-controller="Party" asp-action="Index"><input type="button" class="view" value="Back" /></a>
+    </div>
+    <div class="report-body">
+        <form asp-action="Add" asp-controller="Party" method="post">
+            <div class="report-topic-heading">
+                <div asp-validation-summary="ModelOnly" class="text-danger t-op"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_party_name, htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.election_party_name, htmlAttributes: new { @class = "form-control input_text", @autocomplete = "off" })
+                    @Html.ValidationMessageFor(model => model.election_party_name, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_sym_id, htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownListFor(model => model.election_sym_id, ViewBag.SymDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown" })
+                    @*<select asp-for="election_state_id" class="form-control" asp-items="ViewBag.StateDrpList">
+                            <option>--Select--</option>
+                        </select>*@
+                    @Html.ValidationMessageFor(model => model.election_sym_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group text-right">
+                    <button type="submit" class="view">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

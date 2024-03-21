@@ -1,0 +1,44 @@
+﻿@model election_mp_seat_by_state
+@{
+    ViewData["Title"] = "Edit MP Seat";
+}
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">@ViewData["Title"]</h1>
+        <a asp-controller="MPSeat" asp-action="Index"><input type="button" class="view" value="Back" /></a>
+    </div>
+    <div class="report-body">
+        <form asp-action="Edit" asp-controller="MPSeat" method="post">
+            <div class="report-topic-heading">
+                <div asp-validation-summary="ModelOnly" class="text-danger t-op"></div>
+            </div>
+            <input type="hidden" asp-for="election_mp_seat_id" />
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_id, htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownListFor(model => model.election_id, ViewBag.ElectionDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown" })
+                    @Html.ValidationMessageFor(model => model.election_id, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_state_id, htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownListFor(model => model.election_state_id, ViewBag.StateDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown" })
+                    @Html.ValidationMessageFor(model => model.election_state_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_mp_seat_no, htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.election_mp_seat_no, htmlAttributes: new { @class = "form-control input_text", type = "number", @autocomplete = "off" })
+                    @Html.ValidationMessageFor(model => model.election_mp_seat_no, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <br />
+                <div class="col-md-12 form-group text-right">
+                    <button type="submit" class="view">Update</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

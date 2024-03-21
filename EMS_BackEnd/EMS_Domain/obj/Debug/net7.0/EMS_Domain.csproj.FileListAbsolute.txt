@@ -1,0 +1,14 @@
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/EMS_Domain.csproj.AssemblyReference.cache
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/EMS_Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/EMS_Domain.AssemblyInfoInputs.cache
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/EMS_Domain.AssemblyInfo.cs
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/EMS_Domain.csproj.CoreCompileInputs.cache
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/bin/Debug/net7.0/EMS_Domain.deps.json
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/bin/Debug/net7.0/EMS_Domain.runtimeconfig.json
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/bin/Debug/net7.0/EMS_Domain.dll
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/bin/Debug/net7.0/EMS_Domain.pdb
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/EMS_Domain.dll
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/refint/EMS_Domain.dll
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/EMS_Domain.pdb
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/EMS_Domain.genruntimeconfig.cache
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/Debug/net7.0/ref/EMS_Domain.dll

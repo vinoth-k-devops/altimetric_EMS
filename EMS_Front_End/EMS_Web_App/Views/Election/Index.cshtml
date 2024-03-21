@@ -1,0 +1,47 @@
+﻿@model List<election_year_to_date>
+@{
+    ViewData["Title"] = "List of Election";
+}
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">@ViewData["Title"]</h1>
+        <a asp-controller="Election" asp-action="Add"><input type="button" class="view" value="Create" /></a>
+    </div>
+    <div class="report-body">
+        <div class="report-topic-heading">
+            <h3 class="t-op">+</h3>
+            <h3 class="t-op">Election Name</h3>
+            <h3 class="t-op">Election Start Date</h3>
+            <h3 class="t-op">Election End Date</h3>
+            <h3 class="t-op">Election IsActive</h3>
+        </div>
+        <div class="items">
+            @if (Model.Count() > 0)
+            {
+                @foreach (var item in Model)
+                {
+                    <div class="item1">
+                        <h3 class="t-op-nextlvl">
+                            @if (item.election_current_status == 1)
+                            {
+                                <a asp-controller="Election" asp-action="Edit" asp-route-id="@item.election_id"><i class="fa-solid fa-pen-to-square"></i></a>
+                            }
+                            else
+                            {
+                                <a><i class="fa-solid fa-square"></i></a>
+                                
+                            }
+                        </h3>
+                        <h3 class="t-op-nextlvl">@item.election_name</h3>
+                        <h3 class="t-op-nextlvl">@item.election_start_date_time</h3>
+                        <h3 class="t-op-nextlvl">@item.election_end_date_time</h3>
+                        <h3 class="t-op-nextlvl label-tag">@(item.election_current_status == 1 ? "Active" : (item.election_current_status == 2 ? "In Progress" : (item.election_current_status == 3 ? "Completed" : "Cancelled")))</h3>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+
+

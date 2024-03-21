@@ -1,0 +1,49 @@
+﻿@model List<ElectionResult>
+@{
+    ViewData["Title"] = "Election Result";
+    string e_id = "election_id";
+}
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">@ViewData["Title"]</h1>
+    </div>
+    <div class="report-body">
+        <form asp-action="EResult" asp-controller="Home" method="post">
+            <div class="report-topic-heading">
+                <div asp-validation-summary="ModelOnly" class="text-danger t-op"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @Html.Label(e_id, "Election Name", htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownList(e_id, ViewBag.ElectionDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown" })
+                    @Html.ValidationMessage(e_id, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6 form-group text-right">
+                    <button type="submit" class="view" style="height: 67px;margin-left: 40px;">Election Result</button>
+                </div>
+            </div>
+        </form>
+        @if (Model != null)
+        {
+            <div class="report-topic-heading">
+                <hr /><br />
+                @foreach (var i in Model)
+                {
+                    <div class="report-topic-heading" style="margin-top: 20px">
+                        <h3 class="t-op">
+                            <span class="font-view">@Html.Raw(i.symbol)</span> | @i.party_name | @i.candidate_name | Vote Received : @i.pollcount |
+                            @if (i.election_winner)
+                            {
+                                <img src="~/img/winner.jpeg" style="height: 60px; margin-bottom: -23px" />
+                            }
+                            else
+                            {
+                                <img src="~/img/looser-png.png" style="height: 60px; margin-bottom: -23px" />
+                            }
+                        </h3><br />
+                    </div>
+                }
+            </div>
+         }
+    </div>
+</div>

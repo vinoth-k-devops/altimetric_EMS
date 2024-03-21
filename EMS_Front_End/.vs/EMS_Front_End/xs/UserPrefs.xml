@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{90415F01-C20B-42F5-8ACF-8FC0C6A95BB2}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EMS_Web_App/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="EMS_Common/Handler/TransactionHandler.cs" Line="230" Column="1" />
+      <File FileName="EMS_Common/Variables/Constant.cs" Line="57" Column="47" />
+      <File FileName="EMS_Web_App/Views/Home/EResult.cshtml" Line="41" Column="59" />
+      <File FileName="EMS_Web_App/Models/ElectionInput.cs" Line="8" Column="32" />
+      <File FileName="EMS_Web_App/Views/Home/UserDashboard.cshtml" Line="9" Column="85" />
+      <File FileName="EMS_Web_App/Program.cs" Line="82" Column="1" />
+      <File FileName="EMS_Web_App/Views/Canditure/Edit.cshtml" Line="75" Column="41" />
+      <File FileName="EMS_Web_App/Views/Home/Index.cshtml" Line="49" Column="95" />
+      <File FileName="EMS_Web_App/Views/Shared/_Layout.cshtml" Line="60" Column="55" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EMS_Front_End" expanded="True">
+            <Node name="EMS_Common">
+              <Node name="Handler" expanded="True" />
+              <Node name="Variables" expanded="True" />
+            </Node>
+            <Node name="EMS_Web_App">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot">
+                <Node name="img" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/StaticFunc/AuthorizeToken.cs" relfile="EMS_Web_App/StaticFunc/AuthorizeToken.cs" line="16" column="1" />
+      <Breakpoint file="/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/StaticFunc/CustomTokenValidator.cs" relfile="EMS_Web_App/StaticFunc/CustomTokenValidator.cs" line="19" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.EMS__Web__App PreferredExecutionTarget="/Volumes/VinothSSD/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

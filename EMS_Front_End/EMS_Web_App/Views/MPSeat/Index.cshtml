@@ -1,0 +1,44 @@
+﻿@model List<election_mp_seat_lists>
+@{
+    ViewData["Title"] = "Allocated List of MP Seats";
+}
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">@ViewData["Title"]</h1>
+        <a asp-controller="MPSeat" asp-action="Add"><input type="button" class="view" value="Create" /></a>
+    </div>
+    <div class="report-body">
+        <div class="report-topic-heading">
+            <h3 class="t-op">+</h3>
+            <h3 class="t-op">Election Name</h3>
+            <h3 class="t-op">Election State Name</h3>
+            <h3 class="t-op">No of MP Seats</h3>
+        </div>
+        <div class="items">
+            @if (Model.Count() > 0)
+            {
+                @foreach (var item in Model)
+                {
+                    <div class="item1">
+                        <h3 class="t-op-nextlvl">
+                            @if (item.election_seat_to_edit)
+                            {
+                                <a asp-controller="MPSeat" asp-action="Edit" asp-route-id="@item.election_mp_seat_id"><i class="fa-solid fa-pen-to-square"></i></a>
+                            }
+                            else
+                            {
+                                <a><i class="fa-solid fa-square"></i></a>
+                            }
+                        </h3>
+                        <h3 class="t-op-nextlvl">@item.election_name</h3>
+                        <h3 class="t-op-nextlvl">@item.election_state_name</h3>
+                        <h3 class="t-op-nextlvl">@item.election_mp_seat_no</h3>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+
+

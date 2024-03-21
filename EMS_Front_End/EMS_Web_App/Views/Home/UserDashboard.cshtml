@@ -1,0 +1,84 @@
+﻿@model APIResponse
+@{
+    ViewData["Title"] = "Dashboard";
+    UserDashBoard result = null!;
+    string radioBtn = "rdVote";
+    bool showbtn = false;
+    if (Model.IsSuccess)
+    {
+        result = GenericFunc.ExtractJsonData<UserDashBoard>(Model.Data!.ToString());
+    }
+}
+@if (Model.IsSuccess)
+{
+    <div class="box-container">
+        <div class="box box1">
+            <div class="text">
+                <h2 class="topic-heading">@result?.pollCount.ToString()</h2>
+                <h2 class="topic">Polling Count</h2>
+            </div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
+                 alt="Views">
+        </div>
+    </div>
+    <div class="report-container">
+        <div class="report-header">
+            <h1 class="recent-Articles">Voting is Fundamental Rights.</h1>
+            <div asp-validation-summary="ModelOnly" class="text-danger t-op"></div>
+        </div>
+        @if (!(bool)result!.PolledByUser)
+        {
+            <form asp-action="Vote" asp-controller="Home" method="post">
+                <div class="report-body ">
+                    @foreach (var i in result.votings!)
+                    {
+                        showbtn = true;
+                        <div class="report-topic-heading">
+                            <h3 class="t-op">
+                                <label>@Html.RadioButton(radioBtn, i.candidate_id) <span class="font-view">@Html.Raw(i.symbol)</span> @i.party_name | @i.candidate_name</label>
+                            </h3><br />
+                        </div>
+                    }
+                    @Html.ValidationMessage(radioBtn, "", new { @class = "text-danger" })
+                </div>
+                @if (showbtn)
+                {
+                    <div class="row">
+                        <div class="col-md-12 form-group text-right">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="view">Vote</button>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="report-body">
+                        <img src="~/img/Right_to_Vote.png"
+                             style="width: 100%;"
+                             alt="" title="Right To Vote">
+                    </div>
+                }
+            </form>
+        }
+        else
+        {
+        <div class="report-body">
+            <img src="~/img/Right_to_Vote.png"
+                    style="width: 100%;"
+                    alt="" title="Right To Vote">
+        </div>
+        }
+    </div>
+}
+else
+{
+    <div class="report-container">
+        <div class="report-header">
+            <h1 class="recent-Articles">@Model.Message</h1>
+        </div>
+        <div class="report-body">
+            <img src="~/img/Right_to_Vote.png"
+                 style="width: 100%;"
+                 alt="" title="Right To Vote">
+        </div>
+    </div>
+}

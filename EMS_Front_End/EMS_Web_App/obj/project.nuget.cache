@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "3jr5nqDg5ie5NUo7/ytEWdJQSnVwUcwTkBK14txuAFbm9/BvPY6V+cnsUMAFRXb4ZvUD6Gs8r/CP9ggycGMDrQ==",
+  "success": true,
+  "projectFilePath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_Front_End/EMS_Web_App/EMS_Web_App.csproj",
+  "expectedPackageFiles": [
+    "/Users/apple/.nuget/packages/aspnetcorehero.toastnotification/1.1.0/aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/jquery/1.6.3/jquery.1.6.3.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.aspnet.webapi.client/6.0.0/microsoft.aspnet.webapi.client.6.0.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.17/microsoft.aspnetcore.authentication.jwtbearer.7.0.17.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.identitymodel.abstractions/7.4.1/microsoft.identitymodel.abstractions.7.4.1.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.4.1/microsoft.identitymodel.jsonwebtokens.7.4.1.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.identitymodel.logging/7.4.1/microsoft.identitymodel.logging.7.4.1.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.identitymodel.protocols/6.35.0/microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.35.0/microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/microsoft.identitymodel.tokens/7.4.1/microsoft.identitymodel.tokens.7.4.1.nupkg.sha512",
+    "/Users/apple/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/apple/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.identitymodel.tokens.jwt/7.4.1/system.identitymodel.tokens.jwt.7.4.1.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "/Users/apple/.nuget/packages/toastr/2.1.1/toastr.2.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,284 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_API/EMS_API.csproj": {}
+  },
+  "projects": {
+    "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_API/EMS_API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_API/EMS_API.csproj",
+        "projectName": "EMS_API",
+        "projectPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_API/EMS_API.csproj",
+        "packagesPath": "/Users/apple/.nuget/packages/",
+        "outputPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/apple/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.314/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/EMS_Domain.csproj": {
+                "projectPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/EMS_Domain.csproj"
+              },
+              "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Service/EMS_Service.csproj": {
+                "projectPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Service/EMS_Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/EMS_Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/EMS_Common.csproj",
+        "projectName": "EMS_Common",
+        "projectPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/EMS_Common.csproj",
+        "packagesPath": "/Users/apple/.nuget/packages/",
+        "outputPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/apple/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/EMS_Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/EMS_Domain.csproj",
+        "projectName": "EMS_Domain",
+        "projectPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/EMS_Domain.csproj",
+        "packagesPath": "/Users/apple/.nuget/packages/",
+        "outputPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/apple/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Service/EMS_Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Service/EMS_Service.csproj",
+        "projectName": "EMS_Service",
+        "projectPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Service/EMS_Service.csproj",
+        "packagesPath": "/Users/apple/.nuget/packages/",
+        "outputPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/apple/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/EMS_Common.csproj": {
+                "projectPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/EMS_Common.csproj"
+              },
+              "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/EMS_Domain.csproj": {
+                "projectPath": "/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Domain/EMS_Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

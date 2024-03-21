@@ -1,0 +1,39 @@
+﻿@model election_state
+@{
+    ViewData["Title"] = "Edit State";
+}
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">@ViewData["Title"]</h1>
+        <a asp-controller="State" asp-action="Index"><input type="button" class="view" value="Back" /></a>
+    </div>
+    <div class="report-body">
+        <form asp-action="Edit" asp-controller="State" method="post">
+            <div class="report-topic-heading">
+                <div asp-validation-summary="ModelOnly" class="text-danger t-op"></div>
+            </div>
+            <input type="hidden" asp-for="election_state_id" />
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_state_name, htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.election_state_name, htmlAttributes: new { @class = "form-control input_text", @autocomplete = "off" })
+                    @Html.ValidationMessageFor(model => model.election_state_name, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_state_active, htmlAttributes: new { @class = "control-label" })
+                    <div class="col-md-10">
+                        <label>@Html.RadioButtonFor(model => model.election_state_active, true) Active</label>
+                        <label>@Html.RadioButtonFor(model => model.election_state_active, false) In Active</label>                        
+                    </div>
+                    @Html.ValidationMessageFor(model => model.election_state_active, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group text-right">
+                    <button type="submit" class="view">Update</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

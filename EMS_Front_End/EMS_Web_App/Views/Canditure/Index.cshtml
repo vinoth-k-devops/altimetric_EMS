@@ -1,0 +1,49 @@
+﻿@model List<election_contesting_candidate_list>
+@{
+    ViewData["Title"] = "List of Candidate";
+}
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">@ViewData["Title"]</h1>
+        <a asp-controller="Canditure" asp-action="Add"><input type="button" class="view" value="Create" /></a>
+    </div>
+    <div class="report-body">
+        <div class="report-topic-heading">
+            <h3 class="t-op">+</h3>
+            <h3 class="t-op">Election Name</h3>
+            <h3 class="t-op">Party Name</h3>
+            <h3 class="t-op">Candidate Name</h3>
+            <h3 class="t-op">Election State</h3>
+            <h3 class="t-op">Election City</h3>
+        </div>
+        <div class="items">
+            @if (Model.Count() > 0)
+            {
+                @foreach (var item in Model)
+                {
+                    <div class="item1">
+                        <h3 class="t-op-nextlvl">
+                            @if (item.election_canditure_edit)
+                            {
+                                <a asp-controller="Canditure" asp-action="Edit" asp-route-id="@item.election_contest_id"><i class="fa-solid fa-pen-to-square"></i></a>
+                            }
+                            else
+                            {
+                                <a><i class="fa-solid fa-square"></i></a>
+
+                            }
+                        </h3>
+                        <h3 class="t-op-nextlvl">@item.election_name</h3>
+                        <h3 class="t-op-nextlvl">@item.election_party_name</h3>
+                        <h3 class="t-op-nextlvl">@item.election_voter_name</h3>
+                        <h3 class="t-op-nextlvl">@item.election_state_name</h3>
+                        <h3 class="t-op-nextlvl">@item.election_city_name</h3>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+
+

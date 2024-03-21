@@ -1,0 +1,75 @@
+﻿@model EMS_Common.Variables.Dashboard
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="box-container">
+    <div class="box box1">
+        <div class="text">
+            <h2 class="topic-heading">@Model.total_user_count</h2>
+            <h2 class="topic">Total Users</h2>
+        </div>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
+             alt="Views">
+    </div>
+
+    <div class="box box2">
+        <div class="text">
+            <h2 class="topic-heading">@Model.parties_count</h2>
+            <h2 class="topic">Total Parties</h2>
+        </div>
+
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png"
+             alt="likes">
+    </div>
+
+    <div class="box box3">
+        <div class="text">
+            <h2 class="topic-heading">@Model.candidate_count</h2>
+            <h2 class="topic">Candidate Count</h2>
+        </div>
+
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
+             alt="comments">
+    </div>
+
+    <div class="box box4">
+        <div class="text">
+            <h2 class="topic-heading">@Model.awaiting_approval_count</h2>
+            <h2 class="topic">Awaiting Approval</h2>
+        </div>
+
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+    </div>
+</div>
+
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">Approval awaiting</h1>
+        <a asp-controller="Home" asp-action="EResult"><input type="button" style="width: 185px;" class="view" value="Check Election Result" /></a>
+    </div>
+    <div class="report-body">
+        <form asp-action="Approve" asp-controller="Home" method="post">
+            <input type="hidden" asp-for="activate!.election_user_id" value="" />
+            <div class="report-topic-heading">
+                <h3 class="t-op">Voter Id</h3>
+                <h3 class="t-op">Voter Name</h3>
+                <h3 class="t-op">City Name</h3>
+                <h3 class="t-op">State Name</h3>
+                <h3 class="t-op">Approve</h3>
+            </div>
+            <div class="items">
+                @foreach (var item in Model.approval_user!)
+                {
+                    <div class="item1">
+                        <h3 class="t-op-nextlvl">@item.election_voter_id</h3>
+                        <h3 class="t-op-nextlvl">@item.election_voter_name</h3>
+                        <h3 class="t-op-nextlvl">@item.election_city_name</h3>
+                        <h3 class="t-op-nextlvl">@item.election_state_name</h3>                      
+                        <h3 class="t-op-nextlvl label-tag"><button class="t-op-nextlvl label-tag" type="submit" onclick="AssignData('activate_election_user_id', @item.election_user_id)">Approve</button></h3>
+                    </div>
+                }
+            </div>
+        </form>
+    </div>
+</div>

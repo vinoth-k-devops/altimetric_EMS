@@ -1,0 +1,41 @@
+﻿@model election_year_to_date
+@{
+    ViewData["Title"] = "Add Election";
+}
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">@ViewData["Title"]</h1>
+        <a asp-controller="Election" asp-action="Index"><input type="button" class="view" value="Back" /></a>
+    </div>
+    <div class="report-body">
+        <form asp-action="Add" asp-controller="Election" method="post">
+            <div class="report-topic-heading">
+                <div asp-validation-summary="ModelOnly" class="text-danger t-op"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    @Html.LabelFor(model => model.election_name, htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.election_name, htmlAttributes: new { @class = "form-control input_text", @autocomplete = "off" })
+                    @Html.ValidationMessageFor(model => model.election_name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_start_date_time, htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.election_start_date_time, Constant.DateTimeFormat, htmlAttributes: new { @class = "form-control input_text", type = "datetime-local", @autocomplete = "off" })
+                    @Html.ValidationMessageFor(model => model.election_start_date_time, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_end_date_time, htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.election_end_date_time, Constant.DateTimeFormat, htmlAttributes: new { @class = "form-control input_text", type = "datetime-local", @autocomplete = "off" })
+                    @Html.ValidationMessageFor(model => model.election_end_date_time, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group text-right">
+                    <button type="submit" class="view">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

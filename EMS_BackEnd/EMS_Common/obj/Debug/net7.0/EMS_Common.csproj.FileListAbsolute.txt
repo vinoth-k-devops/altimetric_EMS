@@ -1,0 +1,12 @@
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/bin/Debug/net7.0/EMS_Common.deps.json
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/bin/Debug/net7.0/EMS_Common.dll
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/bin/Debug/net7.0/EMS_Common.pdb
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/Debug/net7.0/EMS_Common.csproj.AssemblyReference.cache
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/Debug/net7.0/EMS_Common.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/Debug/net7.0/EMS_Common.AssemblyInfoInputs.cache
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/Debug/net7.0/EMS_Common.AssemblyInfo.cs
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/Debug/net7.0/EMS_Common.csproj.CoreCompileInputs.cache
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/Debug/net7.0/EMS_Common.dll
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/Debug/net7.0/refint/EMS_Common.dll
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/Debug/net7.0/EMS_Common.pdb
+/Volumes/VinothSSD/Altimetrik/altimetric_EMS/EMS_BackEnd/EMS_Common/obj/Debug/net7.0/ref/EMS_Common.dll

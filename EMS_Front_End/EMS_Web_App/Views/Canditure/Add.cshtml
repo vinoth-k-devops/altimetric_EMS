@@ -1,0 +1,81 @@
+﻿@model election_contesting_candidate
+@{
+    ViewData["Title"] = "Add Candidate";
+}
+<div class="report-container">
+    <div class="report-header">
+        <h1 class="recent-Articles">@ViewData["Title"]</h1>
+        <a asp-controller="Canditure" asp-action="Index"><input type="button" class="view" value="Back" /></a>
+    </div>
+    <div class="report-body">
+        <form asp-action="Add" asp-controller="Canditure" method="post">
+            <div class="report-topic-heading">
+                <div asp-validation-summary="ModelOnly" class="text-danger t-op"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_id, htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownListFor(model => model.election_id, ViewBag.ElectionDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown" })
+                    @Html.ValidationMessageFor(model => model.election_id, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_party_id, htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownListFor(model => model.election_party_id, ViewBag.PartyDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown" })
+                    @Html.ValidationMessageFor(model => model.election_party_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_state_id, htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownListFor(model => model.election_state_id, ViewBag.StateDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown", @onchange = "CallCity()" })
+                    @Html.ValidationMessageFor(model => model.election_state_id, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="hidden" id="ddcity" value="@Model.election_city_id" />
+                    @Html.LabelFor(model => model.election_city_id, htmlAttributes: new { @class = "control-label" })
+                    <select class="dropdown" asp-for="election_city_id"></select>
+                    @Html.ValidationMessageFor(model => model.election_city_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @Html.LabelFor(model => model.election_user_id, htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownListFor(model => model.election_user_id, ViewBag.UserDrpList as SelectList, "--Select--", htmlAttributes: new { @class = "dropdown" })
+                    @Html.ValidationMessageFor(model => model.election_user_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group text-right">
+                    <button type="submit" class="view">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        function CallCity() {
+            $.ajax({
+                type: "GET",
+                url: "/Canditure/GetActiveCities/" + $("#election_state_id").val(),
+                success: function (data) {
+                    var result = JSON.parse(data);
+                    var s = '<option value="">--Select--</option>';
+                    if (result != null) {
+                        for (var i = 0; i < result.length; i++) {
+                            s += '<option value="' + result[i].election_city_id + '">' + result[i].election_city_name + '</option>';
+                        }
+                    }
+                    $("#election_city_id").html(s);
+                }
+            });
+        }
+        function SetCity() {
+            var dv = $("#ddcity").val();
+            if (dv != "")
+                $('#election_city_id').val(dv);
+        }
+        CallCity();
+        setTimeout(function () { SetCity(); }, 500);  
+    </script>
+}
